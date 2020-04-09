@@ -74,8 +74,8 @@ class UserManager__Utils(object):
     def prepare_domain_translations(self):
         """Set domain_translations for current request context."""
         from .translation_utils import domain_translations
-        if domain_translations:
-            domain_translations.as_default()
+        #if domain_translations:
+        #    domain_translations.as_default()
 
     def verify_password(self, password, password_hash):
         """Convenience method that calls self.password_manager.verify_password(password, password_hash).

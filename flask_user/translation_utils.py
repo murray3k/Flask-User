@@ -36,7 +36,7 @@ def get_language_codes():
 
 def init_translations(babel):
     if babel:
-        babel._default_domain = domain_translations
+        #babel._default_domain = domain_translations
 
         # Install a language selector if one has not yet been installed
         if babel.locale_selector_func is None:
